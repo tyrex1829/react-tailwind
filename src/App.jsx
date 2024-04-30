@@ -5,7 +5,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   const plusOne = () => {
-    setCount(count + 1);
+    setCount(prevCounter => prevCounter + 1);
+    setCount(prevCounter => prevCounter + 1);
+    setCount(prevCounter => prevCounter + 1);
+    setCount(prevCounter => prevCounter + 1);
   }
 
   const minusOne = () => {
