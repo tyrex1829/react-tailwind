@@ -19,11 +19,16 @@ function App() {
     }
   }
 
+  const makeZero = () => {
+    setCount(0);
+  }
+
   return (
     <>
       <h1 className='mb-3.5'>Counter {count}</h1>
       <button onClick={plusOne} className='mr-1'>+1</button>
-      <button onClick={minusOne} className='ml-1'>-1</button>
+      <button onClick={minusOne} className='ml-1 mr-1'>-1</button>
+      <button onClick={makeZero} className='ml-1'>0</button>
     </>
   )
 }
